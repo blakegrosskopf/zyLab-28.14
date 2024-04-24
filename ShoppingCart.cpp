@@ -30,7 +30,7 @@ void ShoppingCart::RemoveItem(string itemName) {
   }
 
   if (!found) {
-    cout << "The item is not found in the cart. Nothing was removed." << endl;
+    cout << "Item not found in cart. Nothing removed." << endl;
   }
 }
 
@@ -52,7 +52,7 @@ void ShoppingCart::ModifyItem(const ItemToPurchase& item) {
     }
   }
   if (!found) {
-    cout << "Item is not found in the cart. Nothing was modified." << endl;
+    cout << "Item not found in cart. Nothing modified." << endl;
   }
 }
 
@@ -87,12 +87,12 @@ void ShoppingCart::PrintTotal() const {
 
 void ShoppingCart::PrintDescriptions() const {
   cout << customerName << "'s Shopping Cart - " << currentDate << endl << endl;
-    if (cartItems.empty()) {
-      cout << "SHOPPING CART IS EMPTY" << endl;
-      return;
+  if (cartItems.empty()) {
+    cout << "SHOPPING CART IS EMPTY" << endl;
+    return;
   }
   cout << "Item Descriptions" << endl;
-    for (size_t i = 0; i < cartItems.size(); ++i) {
-      cout << cartItems[i].GetDescription() << ": " << cartItems[i].GetItemDescription() << endl;
+  for (size_t i = 0; i < cartItems.size(); ++i) {
+    cout << cartItems[i].GetDescription() << ": " << cartItems[i].GetItemDescription() << endl;
   }
 }
