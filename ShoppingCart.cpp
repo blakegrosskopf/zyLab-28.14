@@ -56,7 +56,7 @@ void ShoppingCart::ModifyItem(const ItemToPurchase& item) {
   }
 }
 
-int ShoppingCart::GetNumberItemsInCart() const {
+int ShoppingCart::GetNumItemsInCart() const {
   int totalItems = 0;
   for (size_t i = 0; i < cartItems.size(); ++i) {
     totalItems += cartItems[i].GetQuantity();
