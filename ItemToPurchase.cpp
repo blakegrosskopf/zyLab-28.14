@@ -18,9 +18,9 @@ string ItemToPurchase::GetDescription() const{
 }
 
 void ItemToPurchase::PrintItemCost() const{
-  court<<itemName<<" "<<itemQuanttiy<<" @$"<<itemPrice<<" =$"<<(itemQuantity * itemPrice)<<endl;
+  cout<<itemName<<" "<<itemQuantity<<" @$"<<itemPrice<<" =$"<<(itemQuantity * itemPrice)<<endl;
 }
 
 void ItemToPurchase::PrintItemDescription() const{
-  court<<itemName<<": " << itemDescription <<endl;
+  cout<<itemName<<": " << itemDescription <<endl;
 }
