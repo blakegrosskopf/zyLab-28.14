@@ -12,6 +12,12 @@ ItemToPurchase::ItemToPurchase(string name, string description, int price, int q
 void ItemToPurchase::SetDescription(string description){
   itemDescription = description;
 }
+void ItemToPurchase::SetPrice(int price){
+  itemPrice = price;
+}
+void ItemToPurchase::SetQuantity(int itemQuantity){
+  itemQuantity = quantity;
+}
 
 string ItemToPurchase::GetDescription() const{
   return itemDescription;
