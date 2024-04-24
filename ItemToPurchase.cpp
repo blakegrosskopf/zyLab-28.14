@@ -13,8 +13,14 @@ void ItemToPurchase::SetDescription(string description){
   itemDescription = description;
 }
 
-string ItemToPurchase::GetDescription() const{
+string ItemToPurchase::GetItemDescription() const{
   return itemDescription;
+}
+int ItemToPurchase::GetPrice() const{
+  return itemPrice;
+}
+int ItemToPurchase::GetQuantity() const{
+  return itemQuantity;
 }
 
 void ItemToPurchase::PrintItemCost() const{
