@@ -13,7 +13,7 @@ void ItemToPurchase::SetDescription(string description){
   itemDescription = description;
 }
 
-string ItemToPurchase::Getescription() const{
+string ItemToPurchase::GetDescription() const{
   return itemDescription;
 }
 int ItemToPurchase::GetPrice() const{
